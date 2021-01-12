@@ -15,7 +15,7 @@ const Container = styled.div`
   position: absolute;
   z-index: 1;
   width: 100vw;
-  height: 10%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

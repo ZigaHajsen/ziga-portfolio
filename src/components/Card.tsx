@@ -1,37 +1,23 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { skills } from '../data/skills';
 
 const Card: React.FC = () => {
   return (
     <Container>
-      <Group>
-        <Title>Languages</Title>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-      </Group>
-      <Group>
-        <Title>Languages</Title>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-      </Group>
-      <Group>
-        <Title>Languages</Title>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-      </Group>
-      <Group>
-        <Title>Languages</Title>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-        <Text>HTML5</Text>
-      </Group>
+      {skills.map((group) => {
+        const { id, title } = group;
+        return (
+          <Group key={id}>
+            <Title>{title}</Title>
+            {group.skills.map((skill) => {
+              const { id, name } = skill;
+
+              return <Text key={id}>{name}</Text>;
+            })}
+          </Group>
+        );
+      })}
     </Container>
   );
 };
@@ -43,8 +29,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: 1100px;
-  margin: 30vh 100px;
+  margin: 0 100px;
 `;
 
 const Group = styled.div`

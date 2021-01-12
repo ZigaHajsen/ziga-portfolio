@@ -28,7 +28,7 @@ const Container = styled.div`
   z-index: 1;
   bottom: 0;
   width: 100vw;
-  height: 10%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
