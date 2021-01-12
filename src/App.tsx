@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import {
+  NavbarContainer,
+  ReactFullpageContainer,
+  FooterContainer,
+} from './containers';
 
 const App: React.FC = () => {
-  return <div>App</div>;
+  return (
+    <Fragment>
+      <NavbarContainer />
+      <ReactFullpageContainer />
+      <FooterContainer />
+    </Fragment>
+  );
 };
 
 export default App;
