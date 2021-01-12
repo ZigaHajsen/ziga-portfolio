@@ -3,12 +3,12 @@ import styled from 'styled-components/macro';
 
 interface BackgroundProps {
   children?: JSX.Element;
-  src: string;
+  background: string;
 }
 
-const Background: React.FC<BackgroundProps> = ({ children, src }) => {
+const Background: React.FC<BackgroundProps> = ({ children, background }) => {
   //@ts-ignore
-  return <Container src={src}>{children}</Container>;
+  return <Container src={background}>{children}</Container>;
 };
 
 export default Background;

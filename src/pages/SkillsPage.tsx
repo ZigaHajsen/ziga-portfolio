@@ -3,7 +3,7 @@ import { Background, Card } from '../components';
 
 const SkillsPage: React.FC = () => {
   return (
-    <Background src={'skills'}>
+    <Background background={'skills'}>
       <Card />
     </Background>
   );
