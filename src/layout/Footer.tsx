@@ -1,22 +1,21 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { footerLinks } from '../data/links';
 
 const Footer: React.FC = () => {
   return (
     <Container>
       <Text>© Žiga Hajšen 2021</Text>
       <Group>
-        <Link href='https://github.com/ZigaHajsen' target='_blank'>
-          <Icon>
-            <FaGithub />
-          </Icon>
-        </Link>
-        <Link href='https://www.linkedin.com/in/ziga-hajsen/' target='_blank'>
-          <Icon>
-            <FaLinkedin />
-          </Icon>
-        </Link>
+        {footerLinks.map((link) => {
+          const { id, url, target, icon } = link;
+
+          return (
+            <Link key={id} href={url} target={target}>
+              <Icon>{icon}</Icon>
+            </Link>
+          );
+        })}
       </Group>
     </Container>
   );
