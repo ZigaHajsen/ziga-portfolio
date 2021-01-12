@@ -3,21 +3,21 @@ import styled from 'styled-components/macro';
 
 interface BackgroundProps {
   children?: JSX.Element;
-  src: string;
+  background: string;
 }
 
-const Background: React.FC<BackgroundProps> = ({ children, src }) => {
-  //@ts-ignore
-  return <Container src={src}>{children}</Container>;
+const Background: React.FC<BackgroundProps> = ({ children, background }) => {
+  return (
+    <Container src={`../images/backgrounds/${background}.png`}>
+      {children}
+    </Container>
+  );
 };
 
 export default Background;
 
-const Container = styled.div`
-  background: url(${(props: any) => `../images/backgrounds/${props.src}.png`});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+const Container = styled.img`
+  object-fit: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
