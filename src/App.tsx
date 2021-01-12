@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react';
-import {
-  NavbarContainer,
-  ReactFullpageContainer,
-  FooterContainer,
-} from './containers';
+import { Navbar, ReactFullpageContainer, Footer } from './layout';
 
 const App: React.FC = () => {
   return (
     <Fragment>
-      <NavbarContainer />
+      <Navbar />
       <ReactFullpageContainer />
-      <FooterContainer />
+      <Footer />
     </Fragment>
   );
 };
