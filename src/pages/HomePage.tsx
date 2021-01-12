@@ -1,7 +1,8 @@
 import React from 'react';
+import { Background } from '../components';
 
 const HomePage: React.FC = () => {
-  return <div>Home Page</div>;
+  return <Background src={'home'}></Background>;
 };
 
 export default HomePage;

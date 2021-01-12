@@ -1,7 +1,8 @@
 import React from 'react';
+import { Background } from '../components';
 
 const ContactPage: React.FC = () => {
-  return <div>Contact Page</div>;
+  return <Background src={'contact'}></Background>;
 };
 
 export default ContactPage;
