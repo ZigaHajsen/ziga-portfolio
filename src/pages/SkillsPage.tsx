@@ -1,8 +1,12 @@
 import React from 'react';
-import { Background } from '../components';
+import { Background, Card } from '../components';
 
 const SkillsPage: React.FC = () => {
-  return <Background src={'skills'}></Background>;
+  return (
+    <Background src={'skills'}>
+      <Card />
+    </Background>
+  );
 };
 
 export default SkillsPage;

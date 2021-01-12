@@ -18,6 +18,20 @@ const Card: React.FC = () => {
         <Text>HTML5</Text>
         <Text>HTML5</Text>
       </Group>
+      <Group>
+        <Title>Languages</Title>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+      </Group>
+      <Group>
+        <Title>Languages</Title>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+        <Text>HTML5</Text>
+      </Group>
     </Container>
   );
 };
@@ -40,6 +54,7 @@ const Group = styled.div`
 
 const Title = styled.h2`
   font-size: 30px;
+  color: green;
 `;
 
 const Text = styled.p`
