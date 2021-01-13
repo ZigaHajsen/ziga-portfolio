@@ -1,28 +1,24 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 import { skills } from '../data/skills';
-import { VerticalText } from '../components';
 
 const Card: React.FC = () => {
   return (
-    <Fragment>
-      <VerticalText>My Skills</VerticalText>
-      <Container>
-        {skills.map((group) => {
-          const { id, title } = group;
-          return (
-            <Group key={id}>
-              <Title>{title}</Title>
-              {group.skills.map((skill) => {
-                const { id, name } = skill;
+    <Container>
+      {skills.map((group) => {
+        const { id, title } = group;
+        return (
+          <Group key={id}>
+            <Title>{title}</Title>
+            {group.skills.map((skill) => {
+              const { id, name } = skill;
 
-                return <Text key={id}>{name}</Text>;
-              })}
-            </Group>
-          );
-        })}
-      </Container>
-    </Fragment>
+              return <Text key={id}>{name}</Text>;
+            })}
+          </Group>
+        );
+      })}
+    </Container>
   );
 };
 

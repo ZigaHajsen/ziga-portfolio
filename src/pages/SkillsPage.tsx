@@ -1,11 +1,14 @@
-import React from 'react';
-import { Background, Card } from '../components';
+import React, { Fragment } from 'react';
+import { Background, Card, VerticalText } from '../components';
 
 const SkillsPage: React.FC = () => {
   return (
-    <Background background={'skills'}>
-      <Card />
-    </Background>
+    <Fragment>
+      <VerticalText>My Skills</VerticalText>
+      <Background background={'skills'}>
+        <Card />
+      </Background>
+    </Fragment>
   );
 };
 

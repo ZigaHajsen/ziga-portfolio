@@ -20,4 +20,5 @@ export const Container = styled.p`
   display: flex;
   justify-content: center;
   opacity: 0.1;
+  color: ${(props) => props.theme.colors.light};
 `;
