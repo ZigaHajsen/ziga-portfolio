@@ -28,20 +28,21 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  margin: 0 100px;
 `;
 
 const Group = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 100px;
 `;
 
 const Title = styled.h2`
-  font-size: 30px;
+  font-size: 2rem;
   color: ${(props) => props.theme.colors.primary};
+  margin-bottom: 2rem;
 `;
 
 const Text = styled.p`
-  font-size: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 `;

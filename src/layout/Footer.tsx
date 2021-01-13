@@ -38,6 +38,7 @@ const Container = styled.div`
 
 const Text = styled.p`
   margin-left: 50px;
+  font-size: 1rem;
 `;
 
 const Group = styled.div`
@@ -45,8 +46,8 @@ const Group = styled.div`
 `;
 
 const Link = styled.a`
-  margin-left: 25px;
-  font-size: 25px;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
 `;
 
 const Icon = styled.i`

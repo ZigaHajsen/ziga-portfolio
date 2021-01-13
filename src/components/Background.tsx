@@ -21,7 +21,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: ${(props) => props.theme.colors.light};
 `;
