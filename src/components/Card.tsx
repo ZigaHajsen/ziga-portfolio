@@ -39,7 +39,7 @@ const Group = styled.div`
 
 const Title = styled.h2`
   font-size: 30px;
-  color: green;
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 const Text = styled.p`

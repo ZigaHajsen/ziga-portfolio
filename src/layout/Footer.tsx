@@ -49,9 +49,9 @@ const Link = styled.a`
 `;
 
 const Icon = styled.i`
-  color: white;
+  color: ${(props) => props.theme.colors.light};
 
   &:hover {
-    color: green;
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
