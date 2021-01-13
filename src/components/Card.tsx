@@ -28,17 +28,19 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const Group = styled.div`
   display: flex;
   flex-direction: column;
+  width: 200px;
   margin: 0 100px;
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
   color: ${(props) => props.theme.colors.primary};
+  font-size: 2rem;
   margin-bottom: 2rem;
 `;
 
