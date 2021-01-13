@@ -20,6 +20,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: ${(props) => props.theme.colors.light};
 `;
 
 const Logo = styled.h1`

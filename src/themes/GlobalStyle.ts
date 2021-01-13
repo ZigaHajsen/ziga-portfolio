@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     background-color: #212121;
-    color: white;
     font-family: 'Roboto', sans-serif;
   }
 
