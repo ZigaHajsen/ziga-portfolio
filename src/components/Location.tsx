@@ -4,30 +4,32 @@ import { personalData } from '../data/personalData';
 
 const Location: React.FC = () => {
   return (
-    <Address>
-      <Text>
+    <LocationDiv>
+      <BigText>
         {personalData.city}, {personalData.country}
-      </Text>
+      </BigText>
       <SmallText>{personalData.email}</SmallText>
       <SmallText>{personalData.phone}</SmallText>
-    </Address>
+    </LocationDiv>
   );
 };
 
 export default Location;
 
-export const Address = styled.div`
+const LocationDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 47%;
+  width: 600px;
+  margin: 25px 75px;
 `;
 
-export const Text = styled.p`
-  font-size: 60px;
+const BigText = styled.p`
+  font-size: 4rem;
   font-weight: bold;
-  margin-top: 0;
+  margin-bottom: 8rem;
 `;
 
-export const SmallText = styled.p`
-  font-size: 20px;
+const SmallText = styled.p`
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 `;

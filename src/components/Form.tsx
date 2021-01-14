@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-const Form = () => {
+const Form: React.FC = () => {
   return (
     <Base>
       <Input type='name' placeholder='Name' />
@@ -20,38 +20,40 @@ const Base = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 47%;
+  width: 400px;
+  margin: 25px 75px;
 `;
 
 const Input = styled.input`
-  background-color: #212121;
-  color: white;
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.light};
   border: 0px;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   outline: none;
 `;
 
 const Textarea = styled.textarea`
-  background-color: #212121;
-  color: white;
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.light};
   border: 0px;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
-  margin-bottom: 20px;
+  height: 8rem;
+  margin-bottom: 1rem;
   resize: none;
   overflow: auto;
   outline: none;
 `;
 
 const Submit = styled.button`
-  background-color: green;
+  background-color: ${(props) => props.theme.colors.primary};
   border: 0px;
   outline: none;
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
   display: flex;
   justify-content: center;
-  color: white;
+  color: ${(props) => props.theme.colors.light};
   cursor: pointer;
 `;

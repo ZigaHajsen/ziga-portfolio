@@ -1,8 +1,8 @@
 const theme = {
   colors: {
     primary: 'green',
+    secondary: '#212121',
     light: 'white',
-    dark: 'black',
   },
   mediaQueries: {
     tablet: `only screen and (max-width: 1100px)`,
