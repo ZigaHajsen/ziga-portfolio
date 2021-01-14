@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components/macro';
 import { skills } from '../data/skills';
 
 const Card: React.FC = () => {
   return (
-    <Container>
+    <Fragment>
       {skills.map((group) => {
         const { id, title } = group;
         return (
@@ -18,19 +18,11 @@ const Card: React.FC = () => {
           </Group>
         );
       })}
-    </Container>
+    </Fragment>
   );
 };
 
 export default Card;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 200px;
-`;
 
 const Group = styled.div`
   display: flex;
