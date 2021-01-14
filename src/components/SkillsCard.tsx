@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components/macro';
 import { skills } from '../data/skills';
+import { ColoredText } from '../components';
 
 const Card: React.FC = () => {
   return (
@@ -9,7 +10,9 @@ const Card: React.FC = () => {
         const { id, title } = group;
         return (
           <Group key={id}>
-            <Title>{title}</Title>
+            <Title>
+              <ColoredText>{title}</ColoredText>
+            </Title>
             {group.skills.map((skill) => {
               const { id, name } = skill;
 
@@ -32,7 +35,6 @@ const Group = styled.div`
 `;
 
 const Title = styled.h2`
-  color: ${(props) => props.theme.colors.primary};
   font-size: 2rem;
   margin-bottom: 2rem;
 `;

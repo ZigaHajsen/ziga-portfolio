@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { personalData } from '../data/personalData';
+import { ColoredText } from '../components';
 
 const Location: React.FC = () => {
   return (
     <LocationDiv>
       <BigText>
-        {personalData.city}, {personalData.country}
+        <ColoredText>{personalData.city}</ColoredText>, {personalData.country}
       </BigText>
       <SmallText>{personalData.email}</SmallText>
       <SmallText>{personalData.phone}</SmallText>
