@@ -1,5 +1,11 @@
 import React, { Fragment } from 'react';
-import { Background, VerticalText, Container, Location } from '../components';
+import {
+  Background,
+  VerticalText,
+  Container,
+  Location,
+  Form,
+} from '../components';
 
 const ContactPage: React.FC = () => {
   return (
@@ -8,6 +14,7 @@ const ContactPage: React.FC = () => {
       <Background background={'contact'}>
         <Container>
           <Location />
+          <Form />
         </Container>
       </Background>
     </Fragment>
