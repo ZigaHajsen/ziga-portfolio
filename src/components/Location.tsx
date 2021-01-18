@@ -4,13 +4,15 @@ import { personalData } from '../data/personalData';
 import { ColoredText } from '../components';
 
 const Location: React.FC = () => {
+  const { city, country, email, phone } = personalData;
+
   return (
     <LocationDiv>
       <BigText>
-        <ColoredText>{personalData.city}</ColoredText>, {personalData.country}
+        <ColoredText>{city}</ColoredText>, {country}
       </BigText>
-      <SmallText>{personalData.email}</SmallText>
-      <SmallText>{personalData.phone}</SmallText>
+      <SmallText>{email}</SmallText>
+      <SmallText>{phone}</SmallText>
     </LocationDiv>
   );
 };
