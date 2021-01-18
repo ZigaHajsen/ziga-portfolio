@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { CgWebsite } from 'react-icons/cg';
 
 export const work = [
   {
@@ -15,7 +16,7 @@ export const work = [
     liveSite: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
-      icon: <FaGithub />,
+      icon: <CgWebsite />,
     },
   },
   {
@@ -31,7 +32,7 @@ export const work = [
     liveSite: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
-      icon: <FaGithub />,
+      icon: <CgWebsite />,
     },
   },
   {
@@ -47,7 +48,7 @@ export const work = [
     liveSite: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
-      icon: <FaGithub />,
+      icon: <CgWebsite />,
     },
   },
   {
@@ -63,7 +64,7 @@ export const work = [
     liveSite: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
-      icon: <FaGithub />,
+      icon: <CgWebsite />,
     },
   },
 ];
