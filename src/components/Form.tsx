@@ -32,6 +32,8 @@ const Input = styled.input`
   width: 100%;
   margin-bottom: 1rem;
   outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 `;
 
 const Textarea = styled.textarea`
@@ -45,6 +47,8 @@ const Textarea = styled.textarea`
   resize: none;
   overflow: auto;
   outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 `;
 
 const Submit = styled.button`
@@ -56,4 +60,5 @@ const Submit = styled.button`
   justify-content: center;
   color: ${(props) => props.theme.colors.light};
   cursor: pointer;
+  font-size: 1rem;
 `;
