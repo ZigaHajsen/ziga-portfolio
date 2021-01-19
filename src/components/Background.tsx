@@ -14,7 +14,7 @@ const Background: React.FC<BackgroundProps> = ({ children, background }) => {
 export default Background;
 
 const Container = styled.div`
-  background: url(${(props: any) => `../images/backgrounds/${props.src}.png`});
+  background: url(${(props: any) => `/images/backgrounds/${props.src}.png`});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
