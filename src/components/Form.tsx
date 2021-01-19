@@ -21,7 +21,7 @@ const Base = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  margin: 25px 75px;
+  margin: auto;
 `;
 
 const Input = styled.input`

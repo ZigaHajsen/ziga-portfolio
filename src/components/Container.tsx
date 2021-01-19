@@ -8,9 +8,6 @@ const Container: React.FC = ({ children }) => {
 export default Container;
 
 const ContainerDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 150px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
