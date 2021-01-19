@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 import { skills } from '../data/skills';
 import { ColoredText } from '../components';
 
 const Card: React.FC = () => {
   return (
-    <Fragment>
+    <Container>
       {skills.map((group) => {
         const { id, title } = group;
         return (
@@ -21,11 +21,16 @@ const Card: React.FC = () => {
           </Group>
         );
       })}
-    </Fragment>
+    </Container>
   );
 };
 
 export default Card;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
 
 const Group = styled.div`
   display: flex;
