@@ -5,9 +5,9 @@ import { CgWebsite } from 'react-icons/cg';
 export const work = [
   {
     id: 1,
-    image: '../../public/images/projects/1.png',
+    image: '/images/projects/1.png',
     title: 'Portfolio Website',
-    subTitle: 'Frontend React App',
+    text: 'Frontend React App',
     github: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
@@ -21,9 +21,9 @@ export const work = [
   },
   {
     id: 2,
-    image: '../../public/images/projects/1.png',
+    image: '/images/projects/1.png',
     title: 'Portfolio Website',
-    subTitle: 'Frontend React App',
+    text: 'Frontend React App',
     github: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
@@ -37,9 +37,9 @@ export const work = [
   },
   {
     id: 3,
-    image: '../../public/images/projects/1.png',
+    image: '/images/projects/1.png',
     title: 'Portfolio Website',
-    subTitle: 'Frontend React App',
+    text: 'Frontend React App',
     github: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
@@ -53,9 +53,9 @@ export const work = [
   },
   {
     id: 4,
-    image: '../../public/images/projects/1.png',
+    image: '/images/projects/1.png',
     title: 'Portfolio Website',
-    subTitle: 'Frontend React App',
+    text: 'Frontend React App',
     github: {
       url: 'https://github.com/ZigaHajsen',
       target: '_blank',
