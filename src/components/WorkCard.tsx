@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { work } from '../data/work';
+import { ColoredText } from '../components';
 
 const WorkCard: React.FC = () => {
   return (
@@ -13,7 +14,9 @@ const WorkCard: React.FC = () => {
             <Image src={image} />
             <Footer>
               <TextGroup>
-                <Title>{title}</Title>
+                <Title>
+                  <ColoredText>{title}</ColoredText>
+                </Title>
                 <Text>{text}</Text>
               </TextGroup>
               <LinkGroup>
@@ -42,11 +45,10 @@ const Container = styled.div`
 `;
 
 const Group = styled.div`
-  background-color: green;
+  background-color: ${(props) => props.theme.colors.secondary};
   display: flex;
   flex-direction: column;
   width: 500px;
-  margin: auto;
 `;
 
 const Image = styled.img`
@@ -74,7 +76,7 @@ const Title = styled.h2`
 
 const Text = styled.p`
   font-size: 1rem;
-  margin: 5px;
+  margin: 5px 0 10px 5px;
 `;
 
 const LinkGroup = styled.div`
@@ -93,6 +95,6 @@ const Icon = styled.i`
   color: ${(props) => props.theme.colors.light};
 
   &:hover {
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
