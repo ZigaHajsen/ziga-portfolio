@@ -1,14 +1,12 @@
 import React, { Fragment } from 'react';
-import { Background, VerticalText, Container, WorkCard } from '../components';
+import { Background, VerticalText, WorkCard } from '../components';
 
 const WorkPage: React.FC = () => {
   return (
     <Fragment>
       <VerticalText>My Work</VerticalText>
       <Background background={'work'}>
-        <Container>
-          <WorkCard />
-        </Container>
+        <WorkCard />
       </Background>
     </Fragment>
   );
