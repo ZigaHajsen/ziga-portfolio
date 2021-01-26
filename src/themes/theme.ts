@@ -5,7 +5,7 @@ const theme = {
     light: 'white',
   },
   mediaQueries: {
-    tablet: `only screen and (max-width: 1100px)`,
+    tablet: `only screen and (max-width: 1600px)`,
     phone: `only screen and (max-width: 600px)`,
   },
 };
