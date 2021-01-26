@@ -7,19 +7,19 @@ const Location: React.FC = () => {
   const { city, country, email, phone } = personalData;
 
   return (
-    <LocationDiv>
+    <Container>
       <BigText>
         <ColoredText>{city}</ColoredText>, {country}
       </BigText>
       <SmallText>{email}</SmallText>
       <SmallText>{phone}</SmallText>
-    </LocationDiv>
+    </Container>
   );
 };
 
 export default Location;
 
-const LocationDiv = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 600px;

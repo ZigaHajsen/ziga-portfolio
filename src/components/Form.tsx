@@ -3,19 +3,19 @@ import styled from 'styled-components/macro';
 
 const Form: React.FC = () => {
   return (
-    <Base>
+    <Container>
       <Input type='name' placeholder='Name' />
       <Input type='email' placeholder='Email' />
       <Input type='text' placeholder='Subject' />
       <Textarea placeholder='Message' />
       <Submit>Contact Me</Submit>
-    </Base>
+    </Container>
   );
 };
 
 export default Form;
 
-const Base = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
