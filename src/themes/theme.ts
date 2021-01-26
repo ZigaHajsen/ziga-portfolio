@@ -6,7 +6,7 @@ const theme = {
   },
   mediaQueries: {
     tablet: `only screen and (max-width: 1100px)`,
-    phone: `only screen and (max-width: 768px)`,
+    phone: `only screen and (max-width: 600px)`,
   },
 };
 
