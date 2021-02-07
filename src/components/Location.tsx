@@ -4,15 +4,15 @@ import { personalData } from '../data/personalData';
 import { ColoredText } from '../components';
 
 const Location: React.FC = () => {
-  const { city, country, email, phone } = personalData;
+  const { city, country } = personalData;
 
   return (
     <Container>
+      <BigText>Situated in</BigText>
       <BigText>
-        <ColoredText>{city}</ColoredText>, {country}
+        <ColoredText>{city}</ColoredText>,
       </BigText>
-      <SmallText>{email}</SmallText>
-      <SmallText>{phone}</SmallText>
+      <BigText>{country}</BigText>
     </Container>
   );
 };
@@ -22,17 +22,12 @@ export default Location;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 400px;
   margin: 25px 75px;
 `;
 
 const BigText = styled.p`
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 8rem;
-`;
-
-const SmallText = styled.p`
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
