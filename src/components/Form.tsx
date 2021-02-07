@@ -1,14 +1,39 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import emailjs from 'emailjs-com';
 
 const Form: React.FC = () => {
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_xqke3x9',
+        'template_qdrk3j2',
+        e.target,
+        'user_UiC549zCSACSVsQ8glaeX'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <Container>
-      <Input type='name' placeholder='Name' />
-      <Input type='email' placeholder='Email' />
-      <Input type='text' placeholder='Subject' />
-      <Textarea placeholder='Message' />
-      <Submit>Contact Me</Submit>
+      <form onSubmit={sendEmail}>
+        <Input type='name' placeholder='Name' name='name' />
+        <Input type='email' placeholder='Email' name='email' />
+        <Input type='text' placeholder='Subject' name='subject' />
+        <Textarea placeholder='Message' name='message' />
+        <Submit type='submit'>Contact Me</Submit>
+      </form>
     </Container>
   );
 };

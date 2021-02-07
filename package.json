@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.18",
+    "emailjs-com": "^2.6.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
