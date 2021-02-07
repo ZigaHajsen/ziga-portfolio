@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+// @ts-ignore
+import Resume from '../files/ŽigaHajšenResume.pdf';
 
 const Navbar: React.FC = () => {
   return (
     <Container>
       <Logo>ŽIGA HAJŠEN</Logo>
+      <Download href={Resume} download='ŽigaHajšenResume.pdf'>
+        Resume
+      </Download>
     </Container>
   );
 };
@@ -25,4 +30,15 @@ const Container = styled.div`
 
 const Logo = styled.h1`
   margin-left: 50px;
+`;
+
+const Download = styled.a`
+  margin-right: 50px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.light};
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+  }
 `;
