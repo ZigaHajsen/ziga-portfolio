@@ -5,7 +5,7 @@ import { CgWebsite } from 'react-icons/cg';
 export const work = [
   {
     id: 1,
-    image: '/images/projects/1.png',
+    image: '/images/projects/google-drive-clone-min.png',
     title: 'Google Drive Clone',
     text: 'Fullstack React App',
     github: {
@@ -21,7 +21,7 @@ export const work = [
   },
   {
     id: 2,
-    image: '/images/projects/1.png',
+    image: '/images/projects/search-github-user-min.png',
     title: 'Search Github User',
     text: 'Frontend React App',
     github: {
@@ -37,7 +37,7 @@ export const work = [
   },
   {
     id: 3,
-    image: '/images/projects/1.png',
+    image: '/images/projects/e-commerce-store-min.png',
     title: 'E-Commerce Store',
     text: 'Fullstack React App',
     github: {
@@ -53,7 +53,7 @@ export const work = [
   },
   {
     id: 4,
-    image: '/images/projects/1.png',
+    image: '/images/projects/dev-camper-api-min.png',
     title: 'DevCamper API',
     text: 'Backend React App',
     github: {
