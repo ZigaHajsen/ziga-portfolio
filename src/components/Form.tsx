@@ -52,6 +52,7 @@ const Container = styled.div`
 const Input = styled.input`
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.light};
+  box-sizing: border-box;
   border: 0px;
   padding: 1rem;
   width: 100%;
@@ -64,6 +65,7 @@ const Input = styled.input`
 const Textarea = styled.textarea`
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.light};
+  box-sizing: border-box;
   border: 0px;
   padding: 1rem;
   width: 100%;
@@ -82,6 +84,7 @@ const Submit = styled.button`
   outline: none;
   padding: 0.75rem 1.5rem;
   display: flex;
+  width: 100%;
   justify-content: center;
   color: ${(props) => props.theme.colors.light};
   cursor: pointer;
