@@ -6,15 +6,15 @@ export const work = [
   {
     id: 1,
     image: '/images/projects/1.png',
-    title: 'Portfolio Website',
-    text: 'Frontend React App',
+    title: 'Google Drive Clone',
+    text: 'Fullstack React App',
     github: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://github.com/ZigaHajsen/google-drive-clone',
       target: '_blank',
       icon: <FaGithub />,
     },
     liveSite: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://ziga-google-drive-clone.netlify.app',
       target: '_blank',
       icon: <CgWebsite />,
     },
@@ -22,15 +22,15 @@ export const work = [
   {
     id: 2,
     image: '/images/projects/1.png',
-    title: 'Portfolio Website',
+    title: 'Search Github User',
     text: 'Frontend React App',
     github: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://github.com/ZigaHajsen/search-github-user',
       target: '_blank',
       icon: <FaGithub />,
     },
     liveSite: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://ziga-github-users.netlify.app',
       target: '_blank',
       icon: <CgWebsite />,
     },
@@ -38,15 +38,15 @@ export const work = [
   {
     id: 3,
     image: '/images/projects/1.png',
-    title: 'Portfolio Website',
-    text: 'Frontend React App',
+    title: 'E-Commerce Store',
+    text: 'Fullstack React App',
     github: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://github.com/ZigaHajsen/e-commerce-store',
       target: '_blank',
       icon: <FaGithub />,
     },
     liveSite: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://ziga-ecommerce.herokuapp.com',
       target: '_blank',
       icon: <CgWebsite />,
     },
@@ -54,15 +54,15 @@ export const work = [
   {
     id: 4,
     image: '/images/projects/1.png',
-    title: 'Portfolio Website',
-    text: 'Frontend React App',
+    title: 'DevCamper API',
+    text: 'Backend React App',
     github: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://github.com/ZigaHajsen/dev-camper-api',
       target: '_blank',
       icon: <FaGithub />,
     },
     liveSite: {
-      url: 'https://github.com/ZigaHajsen',
+      url: 'https://ziga-devcamper.herokuapp.com',
       target: '_blank',
       icon: <CgWebsite />,
     },
