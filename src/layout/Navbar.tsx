@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-// @ts-ignore
 import Resume from '../files/ŽigaHajšenResume.pdf';
 
 const Navbar: React.FC = () => {
