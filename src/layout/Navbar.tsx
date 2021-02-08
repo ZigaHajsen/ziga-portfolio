@@ -29,6 +29,10 @@ const Container = styled.div`
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     height: 70px;
   }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    height: 50px;
+  }
 `;
 
 const Logo = styled.h1`
@@ -36,6 +40,10 @@ const Logo = styled.h1`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 1.5rem;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 1.2rem;
   }
 `;
 

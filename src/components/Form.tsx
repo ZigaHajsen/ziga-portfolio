@@ -53,6 +53,10 @@ const Container = styled.div`
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     width: 100%;
   }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    width: 80%;
+  }
 `;
 
 const Input = styled.input`
@@ -71,6 +75,12 @@ const Input = styled.input`
     font-size: 0.75rem;
     padding: 0.75rem;
     margin-bottom: 0.75rem;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
   }
 `;
 
@@ -94,6 +104,13 @@ const Textarea = styled.textarea`
     padding: 0.75rem;
     margin-bottom: 0.75rem;
   }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    height: 6rem;
+  }
 `;
 
 const Submit = styled.button`
@@ -111,5 +128,10 @@ const Submit = styled.button`
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 0.75rem;
     padding: 0.4rem 0.75rem;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
   }
 `;

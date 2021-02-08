@@ -99,6 +99,11 @@ const Title = styled.h2`
     font-size: 1rem;
     margin: 0.5rem;
   }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 0.8rem;
+    margin: 0.3rem;
+  }
 `;
 
 const Text = styled.p`
@@ -112,6 +117,11 @@ const Text = styled.p`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 0.75rem;
+    margin: 0.4rem;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 0.6rem;
     margin: 0.4rem;
   }
 `;
@@ -129,6 +139,10 @@ const Link = styled.a`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 1.5rem;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    font-size: 1.1rem;
   }
 `;
 

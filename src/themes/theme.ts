@@ -7,6 +7,7 @@ const theme = {
   mediaQueries: {
     tablet: `only screen and (max-width: 1600px)`,
     phone: `only screen and (max-width: 600px)`,
+    phoneSmall: `only screen and (max-width: 374px)`,
   },
 };
 

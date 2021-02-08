@@ -38,6 +38,10 @@ const Container = styled.div`
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     height: 70px;
   }
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    height: 50px;
+  }
 `;
 
 const Text = styled.p`
@@ -52,6 +56,11 @@ const Group = styled.div`
 const Link = styled.a`
   margin-left: 1.5rem;
   font-size: 1.5rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
 `;
 
 const Icon = styled.i`
