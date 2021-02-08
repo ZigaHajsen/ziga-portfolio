@@ -47,10 +47,18 @@ const Container = styled.div`
 const Text = styled.p`
   margin-left: 50px;
   font-size: 1rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    margin-left: 25px;
+  }
 `;
 
 const Group = styled.div`
   margin-right: 50px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    margin-right: 25px;
+  }
 `;
 
 const Link = styled.a`

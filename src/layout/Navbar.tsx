@@ -40,6 +40,7 @@ const Logo = styled.h1`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 1.5rem;
+    margin-left: 25px;
   }
 
   @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
@@ -59,5 +60,6 @@ const Download = styled.a`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 1rem;
+    margin-right: 25px;
   }
 `;

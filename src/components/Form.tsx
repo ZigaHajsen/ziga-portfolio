@@ -130,7 +130,7 @@ const Submit = styled.button`
     padding: 0.4rem 0.75rem;
   }
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
+  @media ${({ theme }) => theme.mediaQueries['phoneSmall']} {
     font-size: 0.6rem;
     padding: 0.3rem 0.6rem;
   }
