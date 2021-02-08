@@ -11,7 +11,7 @@ const ContainerDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
     grid-template-columns: 1fr;
     padding: 50px;
   }

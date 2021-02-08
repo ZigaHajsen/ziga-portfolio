@@ -25,7 +25,7 @@ const Container = styled.div`
   width: 400px;
   margin: 25px 75px;
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
     width: 100%;
   }
 `;
