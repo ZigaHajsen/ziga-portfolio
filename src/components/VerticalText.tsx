@@ -21,4 +21,8 @@ export const Container = styled.p`
   justify-content: center;
   opacity: 0.1;
   color: ${(props) => props.theme.colors.light};
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    display: none;
+  }
 `;
