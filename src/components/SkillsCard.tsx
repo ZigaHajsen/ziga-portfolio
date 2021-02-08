@@ -50,7 +50,7 @@ const Group = styled.div`
   margin: 25px 75px;
 
   @media ${({ theme }) => theme.mediaQueries['tablet']} {
-    margin: 40px 40px;
+    margin: 40px 60px;
   }
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
