@@ -25,10 +25,18 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${(props) => props.theme.colors.light};
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    height: 70px;
+  }
 `;
 
 const Logo = styled.h1`
   margin-left: 50px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1.5rem;
+  }
 `;
 
 const Download = styled.a`
@@ -39,5 +47,9 @@ const Download = styled.a`
 
   &:hover {
     color: ${(props) => props.theme.colors.primary};
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1rem;
   }
 `;
