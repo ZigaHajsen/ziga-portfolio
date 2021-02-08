@@ -27,8 +27,16 @@ export const Container = styled.div`
 export const Text = styled.h1`
   font-size: 6rem;
   margin-bottom: 6rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 3rem;
+  }
 `;
 
 export const SubText = styled.h2`
   font-size: 3rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1.2rem;
+  }
 `;
