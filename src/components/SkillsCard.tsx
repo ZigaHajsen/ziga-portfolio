@@ -33,6 +33,11 @@ const Container = styled.div`
   padding: 50px;
   max-width: 1200px;
 
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -43,6 +48,10 @@ const Group = styled.div`
   display: flex;
   flex-direction: column;
   margin: 25px 75px;
+
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
+    margin: 40px 40px;
+  }
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     margin: 30px 30px;

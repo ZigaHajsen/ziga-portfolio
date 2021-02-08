@@ -43,10 +43,13 @@ const Container = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-gap: 100px;
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
-    grid-template-columns: 1fr;
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
     grid-gap: 2rem;
     padding: 50px;
+  }
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -56,7 +59,7 @@ const Group = styled.div`
   flex-direction: column;
   width: 500px;
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
     width: 100%;
   }
 `;
@@ -87,6 +90,11 @@ const Title = styled.h2`
   font-size: 2rem;
   margin: 5px;
 
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
+    font-size: 1.2rem;
+    margin: 0.7rem;
+  }
+
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 1rem;
     margin: 0.5rem;
@@ -96,6 +104,11 @@ const Title = styled.h2`
 const Text = styled.p`
   font-size: 1rem;
   margin: 5px 0 10px 5px;
+
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
+    font-size: 0.9rem;
+    margin: 0.7rem;
+  }
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     font-size: 0.75rem;

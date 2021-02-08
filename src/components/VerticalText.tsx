@@ -22,7 +22,7 @@ export const Container = styled.p`
   opacity: 0.1;
   color: ${(props) => props.theme.colors.light};
 
-  @media ${({ theme }) => theme.mediaQueries['phone']} {
+  @media ${({ theme }) => theme.mediaQueries['tablet']} {
     display: none;
   }
 `;
