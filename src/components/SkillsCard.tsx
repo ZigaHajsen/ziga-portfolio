@@ -54,7 +54,7 @@ const Title = styled.h2`
   margin-bottom: 2rem;
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 `;
@@ -64,7 +64,7 @@ const Text = styled.p`
   margin-bottom: 1.5rem;
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin-bottom: 0.75rem;
   }
 `;
