@@ -42,6 +42,12 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 100px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 50px;
+  }
 `;
 
 const Group = styled.div`
@@ -49,10 +55,18 @@ const Group = styled.div`
   display: flex;
   flex-direction: column;
   width: 500px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    width: 100%;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    display: none;
+  }
 `;
 
 const Footer = styled.div`
@@ -72,11 +86,21 @@ const TextGroup = styled.div`
 const Title = styled.h2`
   font-size: 2rem;
   margin: 5px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
 `;
 
 const Text = styled.p`
   font-size: 1rem;
   margin: 5px 0 10px 5px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.75rem;
+    margin: 0.4rem;
+  }
 `;
 
 const LinkGroup = styled.div`
@@ -89,6 +113,10 @@ const LinkGroup = styled.div`
 const Link = styled.a`
   margin-left: 25px;
   font-size: 2rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1.5rem;
+  }
 `;
 
 const Icon = styled.i`

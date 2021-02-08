@@ -36,7 +36,7 @@ const BigText = styled.p`
   margin-bottom: 2rem;
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
   }
 `;
