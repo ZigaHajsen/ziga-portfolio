@@ -16,9 +16,11 @@ const Form: React.FC = () => {
       .then(
         (result) => {
           console.log(result.text);
+          alert('Message sent. Thank you!');
         },
         (error) => {
           console.log(error.text);
+          alert('Something went wrong. Please try again.');
         }
       );
 
