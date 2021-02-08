@@ -24,10 +24,19 @@ const Container = styled.div`
   flex-direction: column;
   width: 400px;
   margin: 25px 75px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    width: 100%;
+  }
 `;
 
 const BigText = styled.p`
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 `;

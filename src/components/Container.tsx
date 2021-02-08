@@ -13,5 +13,6 @@ const ContainerDiv = styled.div`
 
   @media ${({ theme }) => theme.mediaQueries['phone']} {
     grid-template-columns: 1fr;
+    padding: 50px;
   }
 `;

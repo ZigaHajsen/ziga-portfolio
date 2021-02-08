@@ -49,6 +49,10 @@ const Container = styled.div`
   align-items: center;
   width: 400px;
   margin: auto;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -62,6 +66,12 @@ const Input = styled.input`
   outline: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 `;
 
 const Textarea = styled.textarea`
@@ -78,6 +88,12 @@ const Textarea = styled.textarea`
   outline: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 `;
 
 const Submit = styled.button`
@@ -91,4 +107,9 @@ const Submit = styled.button`
   color: ${(props) => props.theme.colors.light};
   cursor: pointer;
   font-size: 1rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
 `;
