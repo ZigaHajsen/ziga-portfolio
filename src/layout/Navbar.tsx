@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Resume from '../files/ŽigaHajšenResume.pdf';
+import Resume from '../files/ŽigaHajšenResumeENG.pdf';
 
 const Navbar: React.FC = () => {
   return (
