@@ -34,6 +34,10 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${(props) => props.theme.colors.light};
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    height: 70px;
+  }
 `;
 
 const Text = styled.p`
