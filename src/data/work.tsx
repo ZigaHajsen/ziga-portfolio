@@ -55,7 +55,7 @@ export const work = [
     id: 4,
     image: '/images/projects/dev-camper-api-min.png',
     title: 'DevCamper API',
-    text: 'Backend React App',
+    text: 'Backend REST API',
     github: {
       url: 'https://github.com/ZigaHajsen/dev-camper-api',
       target: '_blank',
