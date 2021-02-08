@@ -30,21 +30,41 @@ export default Card;
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+  max-width: 1200px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 const Group = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
   margin: 25px 75px;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    margin: 30px 30px;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 2rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Text = styled.p`
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+
+  @media ${({ theme }) => theme.mediaQueries['phone']} {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
 `;
