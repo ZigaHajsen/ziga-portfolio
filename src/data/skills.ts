@@ -7,6 +7,7 @@ export const skills = [
       { id: 'skill-2', name: 'CSS' },
       { id: 'skill-3', name: 'JavaScript' },
       { id: 'skill-4', name: 'TypeScript' },
+      { id: 'skill-5', name: 'Python' },
     ],
   },
   {
@@ -27,6 +28,7 @@ export const skills = [
       { id: 'skill-2', name: 'Express.js' },
       { id: 'skill-3', name: 'MongoDB' },
       { id: 'skill-4', name: 'Firebase' },
+      { id: 'skill-5', name: 'Flask' },
     ],
   },
   {
