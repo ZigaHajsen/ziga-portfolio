@@ -16,8 +16,9 @@ export const skills = [
     skills: [
       { id: 'skill-1', name: 'React.js' },
       { id: 'skill-2', name: 'Redux.js' },
-      { id: 'skill-3', name: 'Bootstrap' },
-      { id: 'skill-4', name: 'Material-UI' },
+      { id: 'skill-3', name: 'Angular' },
+      { id: 'skill-4', name: 'Bootstrap' },
+      { id: 'skill-5', name: 'Material-UI' },
     ],
   },
   {
@@ -26,9 +27,10 @@ export const skills = [
     skills: [
       { id: 'skill-1', name: 'Node.js' },
       { id: 'skill-2', name: 'Express.js' },
-      { id: 'skill-3', name: 'MongoDB' },
-      { id: 'skill-4', name: 'Firebase' },
-      { id: 'skill-5', name: 'Flask' },
+      { id: 'skill-3', name: 'Flask' },
+      { id: 'skill-4', name: 'MongoDB' },
+      { id: 'skill-5', name: 'Firebase' },
+      { id: 'skill-6', name: 'PostgreSQL' },
     ],
   },
   {
@@ -38,7 +40,7 @@ export const skills = [
       { id: 'skill-1', name: 'Git' },
       { id: 'skill-2', name: 'GitHub' },
       { id: 'skill-3', name: 'Jest' },
-      { id: 'skill-4', name: 'Enzyme' },
+      { id: 'skill-4', name: 'Jasmine' },
     ],
   },
 ];
